@@ -1,6 +1,6 @@
-var images = ["personalWebsite/scriptsAndFiles/carousel-slide_1.jpg",
-    "personalWebsite/scriptsAndFiles/carousel-slide_2.jpg",
-    "personalWebsite/scriptsAndFiles/carousel-slide_3.jpg"];
+var images = ["personalWebsite/images/carousel-slide_1.jpg",
+    "personalWebsite/images/carousel-slide_2.jpg",
+    "personalWebsite/images/carousel-slide_3.jpg"];
 var num = 0;
 
 function previous() { // To be used by left-div.
