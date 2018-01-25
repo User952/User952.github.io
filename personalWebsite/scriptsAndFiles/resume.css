@@ -1,0 +1,343 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(gray, white);
+}
+/*Navigation Bar*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    min-height: 52px;
+    z-index: 1;
+}
+
+nav ul li {
+    float: right;
+}
+
+#name {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    border-left: 1px gray solid;
+}
+
+#name a {
+    border-left: 0;
+    border-right: 1px gray solid;
+}
+
+nav ul li a:hover {
+    animation-iteration-count: infinite;
+    animation: navBlocks 2.5s linear infinite;
+}
+
+#name a:hover {
+    animation: nameBlock 2.5s linear infinite;
+}
+
+@keyframes navBlocks {
+    50% {background-color: gray;}
+}
+
+@keyframes nameBlock {
+    50% {background-color: goldenrod;}
+}
+
+#contact-block {
+    position: relative;
+}
+
+#contact-block:hover #contact-block-menu {
+    display: block;
+}
+
+#contact-block-menu {
+    text-align: center;
+    display: none;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+}
+
+#contact-block-menu a {
+    border-bottom: 1px goldenrod solid;
+    text-align: left;
+}
+
+#contact-block-menu a:last-child {
+    border-bottom: none;
+}
+/*End of Navigation Bar*/
+
+/*Image Carousel and Buttons*/
+#image-carousel {
+    margin: 0;
+    padding: 0;
+    height: 500px;
+}
+
+#left-div {
+    background: linear-gradient(black, white);
+    width: 7.5%;
+    height: 450px;
+    float: left;
+    text-align: center;
+    top: 50px;
+    position: relative;
+    line-height: 450px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+#left-div img {
+    position: relative;
+    top: 50px;
+    width: 70px;
+    height: 150px;
+}
+
+#carousel {
+    position: relative;
+    width: 85%;
+    height: 450px;
+    top: 50px;
+}
+
+#right-div {
+    background: linear-gradient(black, white);
+    width: 7.5%;
+    height: 450px;
+    float: right;
+    text-align: center;
+    top: 50px;
+    position: relative;
+    line-height: 450px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+#right-div img {
+    position: relative;
+    top: 50px;
+    width: 70px;
+    height: 150px;
+}
+
+#left-div img:hover, #right-div img:hover {
+    animation: carouselClickers 2.5s linear infinite;
+}
+
+@keyframes carouselClickers {
+    50% {transform: rotateX(90deg);}
+}
+/*End of Image Carousel and Buttons*/
+
+/*About*/
+#about-section {
+    position: absolute;
+    top: 450px;
+    z-index: -1;
+}
+
+#about {
+    margin: 0;
+    padding: 0 0 25px 0;
+    background-color: white;
+}
+
+#about div {
+    text-align: center;
+}
+
+h2 {
+    display: inline-block;
+    border-bottom: goldenrod 2px solid;
+}
+
+#about p {
+    text-align: center;
+    padding: 0 50px;
+}
+/*End of About*/
+
+/*Skillset*/
+#skillset-section {
+    position: absolute;
+    margin: -35px 0 0 0;
+    z-index: -1;
+}
+
+#skillset {
+    margin: 15px 0 0 0;
+    padding: 0 0 25px 0;
+    background-color: white;
+    text-align: center;
+}
+
+#skillset table {
+    table-layout: fixed;
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0;
+    min-height: 208px;
+}
+
+h3 {
+    display: inline-block;
+    border-bottom: goldenrod 2px solid;
+}
+
+#skillset tr {
+    min-height: 44px;
+}
+
+#skillset td {
+    min-width: 116px;
+}
+
+.filled {
+    color: goldenrod;
+    animation: animateStars 2s linear infinite;
+}
+
+@keyframes animateStars {
+    50% {transform: rotateY(180deg);}
+}
+/*End of Skillset*/
+
+/*Experience*/
+#experience-section {
+    position: absolute;
+    margin: -35px 0 0 0;
+    z-index: -1;
+}
+
+#experience {
+    margin: 15px 0 0 0;
+    padding: 0;
+    background: radial-gradient(gray, white);
+    text-align: center;
+}
+
+.project-item {
+    margin: 10px 30px;
+    padding: 0;
+    width: 500px;
+    height: 250px;
+    display: inline-block;
+    background: radial-gradient(white, gray);
+    overflow: hidden;
+}
+
+.project-item h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    clear: both;
+    width: 100%;
+    border-bottom: 3px goldenrod solid;
+}
+
+.project-item img, .project-item p {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 90%;
+}
+
+.project-item img {
+    float: left;
+}
+
+.project-item p {
+    float: right;
+}
+/*End of Experience*/
+
+/*Education*/
+#education-section {
+    position: absolute;
+    margin: -35px 0 0 0;
+    z-index: -1;
+}
+
+#education {
+    margin: 15px 0 0 0;
+    padding: 0 0 25px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.college {
+    margin: 0;
+    padding: 0 100px;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    text-align: center;
+}
+
+.college img {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 30%;
+}
+
+.college ul {
+    text-align: left;
+}
+/*End of Education*/
+
+/*Contact*/
+footer {
+    margin: 0;
+    padding: 0 0 40px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.link {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 50px;
+}
+
+#contact-section a:hover {
+    animation: animateIcons 2s linear infinite;
+}
+
+@keyframes animateIcons {
+    50% {color: goldenrod;}
+}
