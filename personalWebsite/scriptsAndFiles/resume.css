@@ -250,6 +250,7 @@ h3 {
     display: inline-block;
     background: radial-gradient(white, gray);
     overflow: hidden;
+    box-shadow: 10px 10px 5px gray;
 }
 
 .project-item h3 {
