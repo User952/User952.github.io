@@ -33,7 +33,7 @@ nav a {
     border-right: 1px gray solid;
 }
 
-nav a:hover {
+nav a:hover:not(.icon) {
     animation: navBlocks 2.5s linear infinite;
 }
 
@@ -54,49 +54,48 @@ nav .icon, .collapsed {
 }
 
 @media screen and (max-width: 800px) {
-  nav a:not(:first-child) {
-    display: none;
-  }
+    nav a:not(:first-child) {
+        display: none;
+    }
   
-  #contact-block {
-    display: none;
-  }
+    #contact-block {
+        display: none;
+    }
   
-  nav a.icon {
-    float: right;
-    display: block;
-  }
+    nav a.icon {
+        float: right;
+        display: block;
+    }
   
-  .nav.utilized a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+    .nav.utilized a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
   
-  .nav.utilized .collapsed {
-    float: none;
-    display: block;
-    text-align: left;
-    border-top: 1px gray solid;
-    border-right: 0;
-    border-bottom: 0;
-    border-left: 0;
-  }
+    .nav.utilized .collapsed {
+        float: none;
+        display: block;
+        text-align: left;
+        border-top: 1px gray solid;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 0;
+    }
   
-  .nav.utilized #name {
-    border-top: 0;
-  }
+    .nav.utilized #name {
+        border-top: 0;
+    }
   
-  .nav.utilized #about-block {
-    clear: both;
-  }
+    .nav.utilized #about-block {
+        clear: both;
+    }
   
-  .nav.utilized .icon {
-    border: 0;
-    border-left: 1px gray solid;  
-  }
+    .nav.utilized .icon {
+        border: 0;
+        border-left: 1px gray solid;  
+    }
 }
-
 #contact-block {
     position: relative;
     float: right;
