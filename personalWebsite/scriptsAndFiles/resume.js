@@ -7,6 +7,20 @@ function collapse() { /*Expands the collapsable navigation bar*/
         x.className = "nav";
     }
 }
+
+var collapsed = false;
+
+function changeIcon() {
+    var icon = document.getElementsByClassName("icon")[0].firstElementChild;
+    
+    if (collapsed) {
+        collapsed = false;
+        icon.className = "fa fa-bars";
+    } else {
+        collapsed = true;
+        icon.className = "fa fa-times";
+    }
+}
 /*End of Navigation Bar*/
 
 /*Image Carousel and Buttons*/
