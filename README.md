@@ -12,6 +12,6 @@ JavaScript with HTML and CSS, I feel much more prepared to work on other project
 # Kinematic Equation Calculator
 ![alt text](README_Pictures/kinematic-equation-calculator.png)
 
-A project to be started at a later date. It will consist of a site that could calculate all five kinematic values given only three of
+A project to be started at a later date. It will consist of a site that can calculate all five kinematic values given only three of
 them. While the Peronsal Résumé Website focused more heavily on the HTML and CSS files over the JavaScript code, the Kinematic Equation 
 Calculator must prioritize the JavaScript functions in order to compute correct results.
