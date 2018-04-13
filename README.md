@@ -2,7 +2,7 @@
 An online portfolio of my projects.
 
 # Personal Résumé Website
-![alt text](README_Pictures/personal-résumé-website.png)
+![alt text](README_Pictures/personal-résumé-website.PNG)
 
 Located at https://user952.github.io/. I began this project with the intention of showcasing my HTML, CSS, and JavaScript skills;
 nonetheless, I found it to have been a wonderful and valuable learning experience. By participating in hands-on learning about topics such 
