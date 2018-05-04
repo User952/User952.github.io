@@ -7,6 +7,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     background: linear-gradient(gray, white);
 }
+
 /*Navigation Bar*/
 nav {
     background-color: black;
@@ -96,6 +97,7 @@ nav .icon, .collapsed {
         border-left: 1px gray solid;  
     }
 }
+
 #contact-block {
     position: relative;
     float: right;
