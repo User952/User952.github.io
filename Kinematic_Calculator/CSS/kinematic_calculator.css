@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  overflow: hidden;
+  background-color: black;
+  border-bottom: 2px solid darkgrey;
+}
+
+header a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  border-left: 1px solid darkgrey;
+}
+
+header a:hover {
+  background-color: darkgrey;
+}
+
+header a.title {
+  float: left;
+  border-left: none;
+  border-right: 1px solid darkgrey;
+  font-size: 18px;
+}
+
+footer {
+	background-color: grey;
+	color: white;
+}
