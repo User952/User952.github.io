@@ -7,38 +7,49 @@
       <link href="CSS/kinematic_calculator.css" rel="stylesheet">
       <!-- <link rel="stylesheet" href=
           "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
       <link href="Images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-      <link href="Images/favicon-32x32.png" rel="shortcut icon"
-          type="image/x-icon">
-      <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Mono"
-          rel="stylesheet"> -->
+      <link href="Images/favicon-32x32.png" rel="shortcut icon" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+          rel="stylesheet">
     </head>
+    
     <body>
       <header>
         <a id="title" href="#">Kinematic Calculator</a>
-        <a id="about"href="#">About</a>
+        <a id="about" href="#">About</a>
       </header>
       <div id="about-description">Temporary description.</div>
       
       <main>
-        <p>Test</p>
-        <form>
-           <input type="text" name="i_velocity" /><br>
-           <input type="text" name="f_velocity" /><br>
-           <input type="text" name="distance" /><br>
-           <input type="text" name="time" /><br>
-           <input type="text" name="acceleration" /><br>
-           <input type="submit" value="Submit" /><br>
+        <img id="equations" src="Images/1646786.png">
+        
+        <form autocomplete="on">
+          <label for="i_velocity">Initial velocity: </label>
+          <input type="text" name="i_velocity" placeholder="m/s" required autofocus/><br>
+          <label for="f_velocity">Final velocity: </label>
+          <input type="text" name="f_velocity" placeholder="m/s" required />
+          <br>
+          <label for="distance">Distance: </label>
+          <input type="text" name="distance" placeholder="m" required /><br>
+          <label for="time">Time: </label>
+          <input type="text" name="time" placeholder="s" required /><br>
+          <label for="acceleration">Acceleration: </label>
+          <input type="text" name="acceleration" placeholder="m/s^2" required /><br>
+          <input type="submit" value="Submit" /><br>
         </form>
       </main>
       
-      <footer>
-          <p>Footer</p>
+      <footer id="contact-section">
+        <div class="link">
+          <a href="https://github.com/User952">
+              <i class="fab fa-github fa-2x"></i>
+              <p>github.com/User952</p>
+          </a>
+        </div>
       </footer>
       
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
       <script src="JavaScript/kinematic_calculator.js"></script>
     </body>
 </html>
