@@ -22,20 +22,24 @@
       <div id="about-description">Temporary description.</div>
       
       <main>
-        <img id="equations" src="Images/1646786.png">
+        <img id="equations" src="Images/1646786.png" alt="Kinematic Equations">
         
         <form autocomplete="on">
-          <label for="i_velocity">Initial velocity: </label>
-          <input type="text" name="i_velocity" placeholder="m/s" required autofocus/><br>
-          <label for="f_velocity">Final velocity: </label>
-          <input type="text" name="f_velocity" placeholder="m/s" required />
-          <br>
-          <label for="distance">Distance: </label>
-          <input type="text" name="distance" placeholder="m" required /><br>
-          <label for="time">Time: </label>
-          <input type="text" name="time" placeholder="s" required /><br>
-          <label for="acceleration">Acceleration: </label>
-          <input type="text" name="acceleration" placeholder="m/s^2" required /><br>
+          <label for="i_velocity">Initial velocity:
+            <input id="i_velocity" type="text" name="value" placeholder="m/s" required autofocus/><br>
+          </label>
+          <label for="f_velocity">Final velocity:
+            <input id="f_velocity" type="text" name="value" placeholder="m/s" required /><br>
+          </label>
+          <label for="distance">Distance:
+            <input id="distance" type="text" name="value" placeholder="m" required /><br>
+          </label>
+          <label for="time">Time:
+            <input id="time" type="text" name="value" placeholder="s" required /><br>
+          </label>
+          <label for="acceleration">Acceleration:
+            <input id="acceleration" type="text" name="value" placeholder="m/s^2" required /><br>
+          </label>
           <input type="submit" value="Submit" /><br>
         </form>
       </main>
