@@ -1,476 +1,511 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <title>Xavier Gonzalez</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="personalWebsite/scriptsAndFiles/resume.css"
-            type="text/css" rel="stylesheet">
-        <link rel="stylesheet" href=
-            "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="text/javascript"
-            src="personalWebsite/scriptsAndFiles/resume.js">
-        </script>
-        <link rel="shortcut icon" type="image/x-icon"
-            href="personalWebsite/images/favicon.ico">
-        <link rel="shortcut icon" type="image/x-icon"
-            href="personalWebsite/images/favicon-32x32.png">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono"
-            rel="stylesheet">
-    </head>
-    <body id="main-section">
-        <!--Navigation Bar-->
-        <nav class="nav" id="navigationBar">
-            <a href="https://user952.github.io" id="name">Xavier Gonzalez</a>
-            <a href="#about-section" class="collapsed" id="about-block">
-                About
-            </a>
-            <a href="#skillset-section" class="collapsed">Skillset</a>
-            <a href="#experience-section" class="collapsed">Experience</a>
-            <a href="#education-section" class="collapsed">Education</a>
-            <a href="#contact-section" class="collapsed">Contact</a>
-            <a href="mailto:gonza858@umn.edu" class="collapsed">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                E-mail
-            </a>
-            <a href="https://github.com/User952" class="collapsed">
-                <i class="fa fa-github" aria-hidden="true"></i>
-                GitHub
-            </a>
-            <a href="personalWebsite/scriptsAndFiles/resume.pdf"
-                class="collapsed"><i class="fa fa-file-text-o"
-                aria-hidden="true"></i> Résumé
-            </a>
-            <!--Section for the collapsible navigation bar is separated.-->
-            <div id="contact-block"> <!--Drop-down Contact block-->
-                <a href="#contact-section">
-                    <i class="fa fa-sort-desc fa-inverse"
-                        aria-hidden="true"></i>
-                    Contact
-                </a>
-                <div id="contact-block-menu">
-                    <a href="mailto:gonza858@umn.edu">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        E-mail
-                    </a>
-                    <a href="https://github.com/User952">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                        GitHub
-                    </a>
-                    <a href="personalWebsite/scriptsAndFiles/resume.pdf">
-                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                        Résumé
-                    </a>
-                </div>
-            </div>
-            <a href="#education-section">Education</a>
-            <a href="#experience-section">Experience</a>
-            <a href="#skillset-section">Skillset</a>
-            <a href="#about-section">About</a>
-            <a href="javascript:void(0);" class="icon"
-               onclick="collapse(); changeIcon()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </nav>
-        <!--End of Navigation Bar-->
-
-        <!--Image Carousel and Buttons-->
-        <div id="image-carousel">
-            <div id="left-div" onclick="previous()">
-                <img
-                    src="personalWebsite/images/carousel-arrowLeft.png">
-            </div>
-            <img id="carousel"
-                src="personalWebsite/images/carousel-slide_1.jpg">
-            <div id="right-div" onclick="next()">
-                <img
-                    src="personalWebsite/images/carousel-arrowRight.png">
-            </div>
+  <head>
+    <title>Xavier Gonzalez</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Personal_Website/CSS/resume.css" type="text/css"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous">
+    <script type="text/javascript"
+      src="Personal_Website/JavaScript/resume.js"></script>
+    <link rel="shortcut icon" type="image/x-icon"
+      href="Personal_Website/Images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon"
+      href="Personal_Website/Images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+      rel="stylesheet">
+  </head>
+  <body id="main-section">
+    <!-- Navigation bar -->
+    <nav class="nav" id="navigationBar">
+      <!-- Collapsed navigation bar -->
+      <a href="https://user952.github.io" id="name">Xavier Gonzalez</a>
+      <a href="#about-section" class="collapsed" id="about-block">About</a>
+      <a href="#skillset-section" class="collapsed">Skillset</a>
+      <a href="#experience-section" class="collapsed">Experience</a>
+      <a href="#education-section" class="collapsed">Education</a>
+      <a href="#contact-section" class="collapsed">Contact</a>
+      <a href="mailto:gonza858@umn.edu" class="collapsed">
+        <i class="far fa-envelope fa-fw"></i> E-mail
+      </a>
+      <a href="https://github.com/User952" class="collapsed">
+        <i class="fab fa-github fa-fw"></i> GitHub
+      </a>
+      <a href="Personal_Website/Other_Files/resume.pdf" class="collapsed">
+        <i class="far fa-file-alt fa-fw"></i> Résumé
+      </a>
+      <!-- End of collapsed navigation bar -->
+      
+      <div id="contact-block">
+        <a href="#contact-section">
+          <i class="fas fa-caret-down fa-fw"></i> Contact
+        </a>
+        <!-- Collapsible contact section -->
+        <div id="contact-block-menu">
+          <a href="mailto:gonza858@umn.edu">
+            <i class="far fa-envelope fa-fw"></i> E-mail
+          </a>
+          <a href="https://github.com/User952">
+            <i class="fab fa-github fa-fw"></i> GitHub
+          </a>
+          <a href="Personal_Website/Other_Files/resume.pdf">
+            <i class="far fa-file-alt fa-fw"></i> Résumé
+          </a>
         </div>
-        <!--End of Image Carousel and Buttons-->
+        <!-- End of collapsible contact section -->
+      </div>
+      
+      <a href="#education-section">Education</a>
+      <a href="#experience-section">Experience</a>
+      <a href="#skillset-section">Skillset</a>
+      <a href="#about-section">About</a>
+      <a href="javascript:void(0);" class="icon"
+        onclick="collapse(); changeIcon()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </nav>
+    <!-- End of navigation bar -->
 
-        <!--About-->
-        <div id="about-section"></div> <!--Helps properly link to about.-->
-        <div id="about">
-            <div>
-                <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
-                <h2>About</h2>
-            </div>
-            <p>
-                My name is Xavier Gonzalez and I am a college junior (senior
-                credit-wise) majoring in Computer Science at the University of
-                Minnesota Twin Cities. After completing my
-                academic tasks, I usually devote the rest of my time into honing
-                my programming skills, being involved in extracurriculars on
-                campus (e.g., my Archery and Computing clubs), or staying
-                healthy at the campus gym.
-                <br><br>
-                My dream is to become a developer;
-                I have not yet resolved between the front- or back-end aspect of
-                it (or possibly both). I am currently focusing on the front
-                end by endeavoring to learn jQuery while simultaneously
-                completing my educational assignments.
-                <br><br>
-                At the moment, I am searching for a technology-related research
-                position or internship, in order to gain valuable real-world
-                experience and push my career forward.
-            </p>
+    <!-- Image carousel and buttons-->
+    <div id="image-carousel">
+      <div id="left-div" onclick="previous()">
+        <img src="Personal_Website/Images/carousel-arrowLeft.png"
+          alt="Inspiration quotes">
+      </div>
+      <img id="carousel" src="Personal_Website/Images/carousel-slide_1.jpg">
+      <div id="right-div" onclick="next()">
+        <img src="Personal_Website/Images/carousel-arrowRight.png">
+      </div>
+    </div>
+    <!-- End of image carousel and buttons -->
+
+    <!--About-->
+    <div id="about-section"></div> <!-- Helps properly link to about -->
+    <div id="about">
+      <div>
+        <i class="fas fa-user-circle fa-2x" aria-hidden="true"></i>
+        <h2>About</h2>
+      </div>
+      <p>
+        My name is Xavier Gonzalez and I am a college junior (senior
+        credit-wise) majoring in Computer Science at the University of Minnesota
+        Twin Cities. After completing my academic tasks, I usually devote the
+        rest of my time into honing my programming skills, being involved in
+        extracurriculars on campus (e.g., my Archery and Computing clubs), or
+        staying healthy at the campus gym.
+        <br><br>
+        My dream is to become a developer; I have not yet resolved upon either
+        the front- or back-end aspect of it (or possibly both). I am currently
+        focusing on the front end by reviewing my skills on it while completing
+        my educational assignments.
+        <br><br>
+        At the moment, I am searching for a technology-related research position
+        or internship, in order to gain valuable real-world experience and push
+        my career forward.
+      </p>
+    </div>
+    <!-- End of about -->
+
+    <!-- Skillset -->
+    <div id="skillset-section"></div>
+    <div id="skillset">
+      <div>
+        <i class="fas fa-cog fa-2x fa-spin"></i>
+        <h2>Skillset</h2>
+      </div>
+        <!-- Programming table -->
+        <table>
+          <thead>
+            <tr>
+              <th colspan="4" scope="col">
+                <i class="far fa-keyboard fa-lg"></i>
+                <h3>Programming</h3>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+              </td>
+              <td>C++:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>CSS:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+              </td>
+              <td>JavaScript:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>C:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </td>
+              <td>Java:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>Python:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </td>
+              <td>MySQL:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End of programming Table-->
+
+        <!-- Software table -->
+        <table>
+          <thead>
+            <tr>
+              <th colspan="4" scope="col">
+                <span class="fa-stack fa-xs">
+                  <i class="far fa-square fa-stack-2x"></i>
+                  <i class="fas fa-terminal fa-stack-1x"></i>
+                </span>
+                <h3>Software</h3>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Word:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+              </td>
+              <td>Excel:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>PowerPoint:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </td>
+              <td>Git:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>MATLAB:</td>
+              <td>
+                <i class="fa fa-star filled"></i>
+                <i class="fa fa-star filled"></i>
+                <i class="fa fa-star filled"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End of software table -->
+
+        <!-- Languages table -->
+        <table>
+          <thead>
+            <tr>
+              <th colspan="4" scope="col">
+                <i class="far fa-comments fa-lg"></i>
+                <h3>Languages</h3>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>English:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i></td>
+              <td>Spanish:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>Portuguese:</td>
+              <td>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End of languages table -->
+    </div>
+    <!-- End of skillset -->
+    
+    <!-- Experience -->
+    <div id="experience-section"></div>
+    <div id="experience-title">
+      <i class="far fa-id-card fa-2x"></i>
+      <h2>Experience</h2>
+    </div>
+    <div id="experience">
+      <div class="project-item">
+        <div class="project-item-title">
+          <h4>Personal Résumé Website<br>(January 2018; HTML, CSS, JavaScript)</h4>
         </div>
-        <!--End of About-->
-
-        <!--Skillset-->
-        <div id="skillset-section"></div>
-        <div id="skillset">
-            <div>
-                <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>
-                <h2>Skillset</h2>
-            </div>
-            <!--Programming Table-->
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="4" scope="col">
-                            <i class="fa fa-keyboard-o fa-2x"
-                                aria-hidden="true"></i>
-                            <h3>Programming</h3>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Java:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                        <td>HTML:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Python:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                        <td>CSS:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>C:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                        <td>JavaScript:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>C++:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                        <td>jQuery:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>MySQL:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <!--End of Programming Table-->
-
-            <!--Software Table-->
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="4" scope="col">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-square-o fa-stack-2x"
-                                    aria-hidden="true"></i>
-                                <i class="fa fa-terminal fa-stack-1x"
-                                    aria-hidden="true"></i>
-                            </span>
-                            <h3>Software</h3>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Word:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                        <td>Git:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Excel:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                        <td>MATLAB:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>PowerPoint:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <!--End of Software Table-->
-
-            <!--Languages Table-->
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="4" scope="col">
-                            <i class="fa fa-commenting-o fa-2x"
-                                aria-hidden="true"></i>
-                            <h3>Languages</h3>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>English:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i></td>
-                        <td>Spanish:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Portuguese:</td>
-                        <td>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star filled"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <!--End of Languages Table-->
+        <div class="project-item-content">
+          <img src="Personal_Website/Images/android-chrome-512x512.png"
+            alt="Personal Website logo">
+          <p>
+            I began developing this personal website in January 2018 to
+            showcase my résumé in a visual form, while also demonstrating my
+            HTML, CSS, and JavaScript prowess. The site is in a private
+            repository through GitHub Pages.
+          </p>
         </div>
-        <!--End of Skillset-->
-
-        <!--Experience-->
-        <div id="experience-section"></div>
-        <div id="experience">
-            <div>
-                <i class="fa fa-id-card-o fa-2x" aria-hidden="true"></i>
-                <h2>Experience</h2>
-            </div>
-            <div class="project-item">
-                <h3>Personal Résumé Website</h3>
-                <img src="personalWebsite/images/android-chrome-512x512.png">
-                <p>
-                    I began developing this personal website in January 2018 to
-                    showcase my résumé in a visual form, while also
-                    demonstrating my HTML, CSS, and JavaScript prowess. The site
-                    is in a private repository through GitHub Pages.
-                </p>
-            </div>
-            <div class="project-item">
-                <h3>University Dining Services Worker</h3>
-                <img src="personalWebsite/images/experience-umnDining.jpg">
-                <p>
-                    From September 2016 to January 2018, I worked at several
-                    food courts throughout my college. Activities included
-                    collaborating with co-workers, assisting customers with any
-                    issues, and maintaing a sanitary working area.
-                </p>
-            </div><br>
-            <div class="project-item">
-                <h3>Shipping Simulation (Java)</h3>
-                <img src="personalWebsite/images/experience-shipping.png">
-                <p>
-                    A class project that tasked me with creating a simulation
-                    for a shipping company. Included details such as random
-                    variables affecting the vehicles and tracking cargo through
-                    a priority queue. A final report on the data with graphics
-                    was also made.
-                </p>
-            </div>
-            <div class="project-item">
-                <h3>Single-Player Battleship (Java)</h3>
-                <img src="personalWebsite/images/experience-battleship.jpg">
-                <p>
-                    For this assignment, I constructed a game of Battleship.
-                    Several commands were devised, such as the option of a recon
-                    drone to show nearby ships. Other features included a debug
-                    mode, custom board-sizing, and text graphics.
-                </p>
-            </div>
-            <div class="project-item">
-                <h3>Vote Counter (C)</h3>
-                <img src="personalWebsite/images/experience-voting.jpg">
-                <p>
-                    As a project done throughout the semester in several
-                    variations, I constructed a program that would count the
-                    votes from multiple inputted files and determine the winner.
-                    Utilized mutex locks, process/thread creation, and sockets.
-                </p>
-            </div>
-
+      </div>
+      
+      <div class="project-item">
+        <div class="project-item-title">
+          <h4>University Dining Services Worker<br>(September 2016 - January
+            2018)</h4>
         </div>
-        <!--End of Experience-->
-
-        <!--Education-->
-        <div id="education-section"></div>
-        <div id="education">
-            <div>
-                <i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
-                <h2>Education</h2>
-            </div>
-
-            <div class="college">
-                <h3>
-                    Anoka-Ramsey Community College - Coon Rapids, Minnesota
-                </h3>
-                <img src="personalWebsite/images/education-ar.png"><hr><hr>
-                <ul>
-                    <li>2014–2016</li>
-                    <li>Postsecondary Enrollment Options</li>
-                    <li>GPA: 4.0/4.0</li>
-                    <li>33 credits in General Education subjects</li>
-                    <li>Courses:
-                        <ul>
-                            <li>College Writing and Critical Reading</li>
-                            <li>Calculus I</li>
-                            <li>Modern World Civilizations I</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="college">
-                <h3>
-                    University of Minnesota Twin Cities - Minneapolis, Minnesota
-                </h3>
-                <img src="personalWebsite/images/education-umn.png"><hr><hr>
-                <ul>
-                    <li>2016–Present</li>
-                    <li>Bachelor of Science, Computer Science (Expected May
-                        2019)</li>
-                    <li>GPA: 3.1/4.0</li>
-                    <li>Courses:
-                        <ul>
-                            <li>Program Design and Development</li>
-                            <li>Algorithms and Data Structures</li>
-                            <li>Machine Architecture and Organization</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+        <div class="project-item-content">
+          <img src="Personal_Website/Images/experience-umnDining.jpg"
+            alt="UMN Dining logo">
+          <p>
+            From September 2016 to January 2018, I worked at several food
+            courts throughout my college. Activities included collaborating
+            with co-workers, assisting customers with any issues, and
+            maintaing a sanitary working area.
+          </p>
         </div>
-        <!--End of Education-->
+      </div>
+      
+      <div class="project-item">
+        <div class="project-item-title">
+          <h4>Shipping Simulation<br>(April 2017; Java)</h4>
+        </div>
+        <div class="project-item-content">
+          <img src="Personal_Website/Images/experience-shipping.png" alt="">
+          <p>
+            A class project that tasked me with creating a simulation for a
+            shipping company. Included details such as random variables
+            affecting the vehicles and tracking cargo through a priority queue.
+            A final report on the data with graphics was also made.
+          </p>
+        </div>
+      </div>
+      
+      <div class="project-item">
+        <div class="project-item-title">
+          <h4>Single-Player Battleship<br>(March 2017; Java)</h4>
+        </div>
+        <div class="project-item-content">
+          <img src="Personal_Website/Images/experience-battleship.jpg" alt="">
+          <p>
+            For this assignment, I constructed a game of Battleship. Several
+            commands were devised, such as the option of a recon drone to show
+            nearby ships. Other features included a debug mode, custom
+            board-sizing, and text graphics.
+          </p>
+        </div>
+      </div>
+      
+      <div class="project-item">
+        <div class="project-item-title">
+          <h4>Vote Counter<br>(February 2018 - April 2018; C)</h4>
+        </div>
+        <div class="project-item-content">
+          <img src="Personal_Website/Images/experience-voting.jpg" alt="">
+          <p>
+            As a project done throughout the semester in several variations, I
+            constructed a program that would count the votes from multiple
+            inputted files and determine the winner. Utilized mutex locks,
+            process/thread creation, and sockets.
+          </p>
+        </div>
+      </div>
+      
+      <div class="project-item">
+        <div class="project-item-title">
+          <h4>Robot Simulator<br>(January 2018 - May 2018; C++)</h4>
+        </div>
+        <div class="project-item-content">
+          <img src="Personal_Website/Images/experience-robot-simulator.png"
+            alt="">
+          <p>
+            This semester-long project tasked me with creating a simulation for
+            a consumer. The program (complete with a GUI) allowed the user to
+            vary factors (e.g., food and light sources) in the arena and view
+            the subsequent response from "robot" objects moving in it.
+          </p>
+        </div>
+      </div>
+      
+      <div class="project-item" style="grid-column: 2 / 3;">
+        <div class="project-item-title">
+          <h4>Security Monitor<br>(August 2018 - Present)</h4>
+        </div>
+        <div class="project-item-content">
+          <img src="Personal_Website/Images/experience-public-safety.jpg"
+            alt="">
+          <p>
+            I am currently employed as security monitor by the Department of
+            Public Safety, at the University of Minnesota. Per our motto, my
+            duties include enhancing personal safety, reducing risk, and acting
+            as an ambassador of the college at all times while in uniform.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--End of Experience-->
 
-        <!--Contact-->
-        <footer id="contact-section">
-            <div>
-                <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
-                <h2>Contact</h2>
-            </div>
-            <div class="link">
-                <a href="mailto:gonza858@umn.edu">
-                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                    <p>gonza858@umn.edu</p>
-                </a>
-            </div>
-            <div class="link">
-                <a href="https://github.com/User952">
-                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                    <p>github.com/User952</p>
-                </a>
-            </div>
-            <div class="link">
-                <a href="personalWebsite/scriptsAndFiles/resume.pdf">
-                    <i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
-                    <p>Résumé</p>
-                </a>
-            </div>
-        </footer>
-        <!--End of Contact-->
-    </body>
+    <!--Education-->
+    <div id="education-section"></div>
+    <div id="education">
+      <div>
+        <i class="fas fa-graduation-cap fa-2x"></i>
+        <h2>Education</h2>
+      </div>
+
+      <div class="college">
+        <h3>Anoka-Ramsey Community College - Coon Rapids, Minnesota</h3>
+        <img src="Personal_Website/Images/education-ar.png"
+          alt="Anoka-Ramsey Community College logo">
+        <hr><hr>
+        <ul>
+          <li>2014–2016</li>
+          <li>Postsecondary Enrollment Options</li>
+          <li>GPA: 4.0/4.0</li>
+          <li>33 credits in General Education subjects</li>
+          <li>Courses:
+            <ul>
+              <li>College Writing and Critical Reading</li>
+              <li>Calculus I</li>
+              <li>Modern World Civilizations I</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="college">
+        <h3>University of Minnesota Twin Cities - Minneapolis, Minnesota</h3>
+        <img src="Personal_Website/Images/education-umn.png"
+          alt="University of Minnesota logo">
+        <hr><hr>
+        <ul>
+          <li>2016–Present</li>
+          <li>Bachelor of Science, Computer Science (Expected May
+              2019)</li>
+          <li>GPA: 3.1/4.0</li>
+          <li>Courses:
+            <ul>
+              <li>Program Design and Development</li>
+              <li>Algorithms and Data Structures</li>
+              <li>Machine Architecture and Organization</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--End of Education-->
+
+    <!--Contact-->
+    <footer id="contact-section">
+      <div id="contact-title">
+        <i class="fas fa-info-circle fa-2x"></i>
+        <h2>Contact</h2>
+      </div>
+      <div class="link">
+        <a href="mailto:gonza858@umn.edu">
+          <i class="far fa-envelope fa-2x fa-fw"></i>
+          <p>gonza858@umn.edu</p>
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://github.com/User952">
+          <i class="fab fa-github fa-2x fa-fw"></i>
+          <p>github.com/User952</p>
+        </a>
+      </div>
+      <div class="link">
+        <a href="Personal_Website/Other_Files/resume.pdf">
+          <i class="far fa-file-alt fa-2x fa-fw"></i>
+          <p>Résumé</p>
+        </a>
+      </div>
+    </footer>
+    <!--End of Contact-->
+  </body>
 </html>
