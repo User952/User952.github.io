@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -29,7 +34,7 @@ header a:hover {
   background-color: darkgrey;
 }
 
-header a#title {
+#title {
   float: left;
   border-left: none;
   border-right: 1px solid darkgrey;
@@ -38,6 +43,7 @@ header a#title {
 #about-description {
 	background-color: darkgrey;
 	display: none;
+	padding: 1em;
 }
 /* End of header. */
 
@@ -60,11 +66,6 @@ main {
 
 /* Start of footer. */
 footer {
-	background-color: grey;
-	color: white;
-}
-
-footer {
   margin: 0;
   background-color: black;
   color: white;
@@ -81,6 +82,10 @@ footer a {
   color: white;
   text-decoration: none;
   display: inline-block;
+}
+
+footer a p {
+	margin-top: 1em;
 }
 
 #contact-section a:hover {
