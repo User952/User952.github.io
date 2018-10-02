@@ -43,11 +43,11 @@ nav a:hover:not(.icon) {
 }
 
 @keyframes navBlocks {
-  50% {background-color: gray;}
+  50% { background-color: gray; }
 }
 
 @keyframes nameBlock { /* Special coloring for the #name block. */
-  50% {background-color: goldenrod;}
+  50% { background-color: goldenrod; }
 }
 
 nav .icon, .collapsed {
@@ -271,7 +271,7 @@ h3 {
 }
 
 @keyframes animateStars {
-    50% {transform: rotateY(180deg);}
+    50% { transform: rotateY(180deg); }
 }
 /* End of Skillset. */
 
@@ -339,7 +339,11 @@ h3 {
 }
 
 .present:hover {
-  transform: scale(1.06);
+  animation: animateExperience 2s linear infinite;
+}
+
+@keyframes animateExperience {
+  50% { transform: scale(1.06); }
 }
 /* End of Experience. */
 
@@ -410,6 +414,6 @@ footer a {
 }
 
 @keyframes animateIcons {
-  50% {color: goldenrod;}
+  50% { color: goldenrod; }
 }
 /* End of contact */
