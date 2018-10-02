@@ -8,7 +8,7 @@ body {
   background: linear-gradient(gray, white);
 }
 
-/* Navigation bar */
+/* Start of Navigation bar. */
 nav {
   background-color: black;
   overflow: hidden;
@@ -131,9 +131,9 @@ nav .icon, .collapsed {
 #contact-block-menu a:last-child {
   border-bottom: none;
 }
-/* End of navigation bar */
+/* End of Navigation Bar. */
 
-/* Image carousel and buttons */
+/* Start of Image Carousel and Buttons. */
 #image-carousel {
   margin: 0;
   padding: 0;
@@ -200,9 +200,9 @@ nav .icon, .collapsed {
 @keyframes carouselClickers {
   50% {transform: rotateX(90deg);}
 }
-/* End of image carousel and buttons */
+/* End of Image Carousel and Buttons. */
 
-/* About */
+/* Start of About. */
 #about-section {
   position: absolute;
   top: 450px;
@@ -228,9 +228,9 @@ h2 {
   text-align: center;
   padding: 0 50px;
 }
-/* End of about */
+/* End of About. */
 
-/* Skillset */
+/* Start of Skillset. */
 #skillset-section {
   position: absolute;
   margin: -35px 0 0 0;
@@ -273,9 +273,9 @@ h3 {
 @keyframes animateStars {
     50% {transform: rotateY(180deg);}
 }
-/* End of skillset */
+/* End of Skillset. */
 
-/* Experience */
+/* Start of Experience. */
 #experience-section {
   position: absolute;
   margin: -35px 0 0 0;
@@ -328,9 +328,22 @@ h3 {
 .project-item p {
   float: right;
 }
-/*End of Experience*/
 
-/*Education*/
+.present {
+  text-decoration: none;
+  color: black;
+}
+
+.present .project-item {
+  background: radial-gradient(white, goldenrod);
+}
+
+.present:hover {
+  transform: scale(1.06);
+}
+/* End of Experience. */
+
+/* Education. */
 #education-section {
     position: absolute;
     margin: -35px 0 0 0;

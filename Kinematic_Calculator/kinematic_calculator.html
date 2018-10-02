@@ -23,13 +23,14 @@
       <div id="about-description">Temporary description.</div>
       <!-- End of Header. -->
       
+      <!-- Start of Main. -->
       <main>
         <img id="equations" src="Images/1646786.png" alt="Kinematic Equations">
         
         <form autocomplete="on">
           <label for="i_velocity">Initial velocity:<br>
             <input id="i_velocity" type="text" name="value" placeholder="m/s"
-            required> <!-- ADD autofocus HERE!!!!!!!!!!!!!!!!! -->
+            required> <!-- ADD autofocus HERE!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
           </label><br>
           <label for="f_velocity">Final velocity:<br>
             <input id="f_velocity" type="text" name="value" placeholder="m/s"
@@ -48,7 +49,15 @@
           </label><br>
           <input type="submit" value="Submit" /><br>
         </form>
+        
+        <div id="results">
+          <p>Initial Velocity: </p>
+          <div>---</div>
+          <p>Final Velocity: </p>
+          <div>---</div>
+        </div>
       </main>
+      <!-- End of Main. -->
       
       <!-- Start of Footer. -->
       <footer id="contact-section">
