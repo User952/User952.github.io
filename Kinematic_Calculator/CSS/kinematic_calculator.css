@@ -30,8 +30,20 @@ header a {
   border-left: 1px solid darkgrey;
 }
 
-header a:hover {
-  background-color: darkgrey;
+#title:hover {
+  animation: animate_title 2.5s linear infinite;
+}
+
+@keyframes animate_title {
+	50% { background-color: goldenrod; }
+}
+
+#about:hover {
+  animation: animate_about 2.5s linear infinite;
+}
+
+@keyframes animate_about {
+	50% { background-color: grey; }
 }
 
 #title {
@@ -51,18 +63,32 @@ header a:hover {
 main {
 	background: linear-gradient(gray, white);
 	padding: 5rem 0rem;
-}
-
-#equations, form, #results {
-	display: inline-block;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1em;
+	text-align: center;
 }
 
 #equations {
-	height: 300px;
-	width: 700px;
+	
 }
 
+form {
+	
+}
 
+#results {
+	
+}
+
+#equations, form, #results {
+	height: 100%;
+	width: 100%;
+}
+
+#submit:hover {
+	cursor: pointer;
+}
 /* End of Main */
 
 
@@ -74,10 +100,28 @@ footer {
   text-align: center;
 }
 
+#contact-title {
+  padding: 0;
+  margin-top: 20px;
+}
+
+h2 {
+  display: inline-block;
+  border-bottom: goldenrod 2px solid;
+}
+
 .link {
   display: inline-block;
   text-align: center;
   padding: 2em;
+}
+
+.link a:hover {
+  animation: animateIcons 2s linear infinite;
+}
+
+@keyframes animateIcons {
+  50% {color: goldenrod;}
 }
 
 footer a {
@@ -88,13 +132,5 @@ footer a {
 
 footer a p {
 	margin-top: 1em;
-}
-
-#contact-section a:hover {
-  animation: animateIcons 2s linear infinite;
-}
-
-@keyframes animateIcons {
-  50% {color: goldenrod;}
 }
 /* End of footer. */

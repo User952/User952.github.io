@@ -28,39 +28,57 @@
         <img id="equations" src="Images/1646786.png" alt="Kinematic Equations">
         
         <form autocomplete="on">
+          <h3>INPUT</h3>
+          
           <label for="i_velocity">Initial velocity:<br>
             <input id="i_velocity" type="text" name="value" placeholder="m/s"
-            required> <!-- ADD autofocus HERE!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+            > <!-- ADD autofocus HERE!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
           </label><br>
+          
           <label for="f_velocity">Final velocity:<br>
             <input id="f_velocity" type="text" name="value" placeholder="m/s"
-            required>
+            >
           </label><br>
+          
           <label for="distance">Distance:<br>
             <input id="distance" type="text" name="value" placeholder="m"
-              required>
+              >
           </label><br>
+          
           <label for="time">Time:<br>
-            <input id="time" type="text" name="value" placeholder="s" required>
+            <input id="time" type="text" name="value" placeholder="s" >
           </label><br>
+          
           <label for="acceleration">Acceleration:<br>
             <input id="acceleration" type="text" name="value"
-              placeholder="m/s^2" required>
+              placeholder="m/s^2" >
           </label><br>
-          <input type="submit" value="Submit" /><br>
+          
+          <input id="submit" type="submit" value="Submit"><br>
         </form>
         
         <div id="results">
+          <h3>OUPTUT</h3>
           <p>Initial Velocity: </p>
-          <div>---</div>
+          <div id="i_v_value">---</div>
           <p>Final Velocity: </p>
-          <div>---</div>
+          <div id="f_v_value">---</div>
+          <p>Distance: </p>
+          <div id="d_value">---</div>
+          <p>Time: </p>
+          <div id="t_value">---</div>
+          <p>Acceleration: </p>
+          <div id="a_value">---</div>
         </div>
       </main>
       <!-- End of Main. -->
       
       <!-- Start of Footer. -->
       <footer id="contact-section">
+        <div id="contact-title">
+          <i class="fas fa-info-circle fa-2x"></i>
+          <h2>Contact</h2>
+        </div>
         <div class="link">
           <a href="https://github.com/User952">
             <i class="fab fa-github fa-2x fa-fw"></i>

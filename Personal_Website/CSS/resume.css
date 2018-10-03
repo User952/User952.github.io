@@ -54,6 +54,7 @@ nav .icon, .collapsed {
   display: none;
 }
 
+/* The Navigation Bar will collapse, for small screens. */
 @media screen and (max-width: 800px) {
   nav a:not(:first-child) {
     display: none;
@@ -335,7 +336,11 @@ h3 {
 }
 
 .present .project-item {
-  background: radial-gradient(white, goldenrod);
+  background: radial-gradient(goldenrod, grey);
+}
+
+.present .project-item-title {
+  border-bottom: black solid 3px;
 }
 
 .present:hover {
@@ -347,7 +352,7 @@ h3 {
 }
 /* End of Experience. */
 
-/* Education. */
+/* Start of Education. */
 #education-section {
     position: absolute;
     margin: -35px 0 0 0;
@@ -380,9 +385,9 @@ h3 {
 .college ul {
     text-align: left;
 }
-/*End of Education*/
+/* End of Education. */
 
-/*Contact*/
+/* Start of Contact. */
 footer {
   margin: 0;
   padding: 0 0 40px 0;
@@ -416,4 +421,4 @@ footer a {
 @keyframes animateIcons {
   50% { color: goldenrod; }
 }
-/* End of contact */
+/* End of Contact. */
