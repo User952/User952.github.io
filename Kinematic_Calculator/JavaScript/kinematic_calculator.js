@@ -5,53 +5,55 @@ $(document).ready(() => {
 	  $("#about-description").slideUp();
 	});
 	
-	document.getElementById("i_velocity").value = localStorage.getItem("i_v");
-	document.getElementById("i_v_value").innerHTML = localStorage.getItem("i_v");
+	const $i_v = $("#i_velocity");
+	const $f_v = $("#f_velocity");
+	const $t = $("#time");
+	const $a = $("#acceleration");
+	const $d = $("#distance");
 	
-	document.getElementById("f_velocity").value = localStorage.getItem("f_v");
-	document.getElementById("f_v_value").innerHTML = localStorage.getItem("f_v");
+	const $i_v_value = $("#i_v_value");
+	const $f_v_value = $("#f_v_value");
+	const $d_value = $("#d_value");
+	const $t_value = $("#t_value");
+	const $a_value = $("#a_value");
 	
-	document.getElementById("distance").value = localStorage.getItem("d");
-	document.getElementById("d_value").innerHTML = localStorage.getItem("d");
-	
-	document.getElementById("time").value = localStorage.getItem("t");
-	document.getElementById("t_value").innerHTML = localStorage.getItem("t");
-	
-	document.getElementById("acceleration").value = localStorage.getItem("a");
-	document.getElementById("a_value").innerHTML = localStorage.getItem("a");
+	$i_v.val(sessionStorage.getItem("$i_v"));
+	$f_v.val(sessionStorage.getItem("$f_v"));
+	$d.val(sessionStorage.getItem("$d"));
+	$t.val(sessionStorage.getItem("$t"));
+	$a.val(sessionStorage.getItem("$a"));
+		
+	$i_v_value.text(sessionStorage.getItem("$i_v_value"));
+	$f_v_value.text(sessionStorage.getItem("$f_v_value"));
+	$d_value.text(sessionStorage.getItem("$d_value"));
+	$t_value.text(sessionStorage.getItem("$t_value"));
+	$a_value.text(sessionStorage.getItem("$a_value"));
 	
 	$("#submit").on("click", () => {
-		var i_v = document.getElementById("i_velocity").value;
-		var f_v = document.getElementById("f_velocity").value;
-		var d = document.getElementById("distance").value;
-		var t = document.getElementById("time").value;
-		var a = document.getElementById("acceleration").value;
+		sessionStorage.setItem("$i_v", $i_v.val());
+		sessionStorage.setItem("$f_v", $f_v.val());
+		sessionStorage.setItem("$d", $d.val());
+		sessionStorage.setItem("$t", $t.val());
+		sessionStorage.setItem("$a", $a.val());
 		
-		localStorage.setItem("i_v", i_v);
-		localStorage.setItem("f_v", f_v);
-		localStorage.setItem("d", d);
-		localStorage.setItem("t", t);
-		localStorage.setItem("a", a);
-		
-		/*$("#i_v_value").text(localStorage.getItem("i_v"));
-		$("#f_v_value").text(localStorage.getItem("f_v"));
-		$("#d_value").text(localStorage.getItem("d"));
-		$("#t_value").text(localStorage.getItem("t"));
-		$("#a_value").text(localStorage.getItem("a"));*/
+		sessionStorage.setItem("$i_v_value", $i_v.val());
+		sessionStorage.setItem("$f_v_value", $f_v.val());
+		sessionStorage.setItem("$d_value", $d.val());
+		sessionStorage.setItem("$t_value", $t.val());
+		sessionStorage.setItem("$a_value", $a.val());
 	});
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	$("#clear").on("click", () => {
+		sessionStorage.setItem("$i_v", "");
+		sessionStorage.setItem("$f_v", "");
+		sessionStorage.setItem("$d", "");
+		sessionStorage.setItem("$t", "");
+		sessionStorage.setItem("$a", "");
+		
+		sessionStorage.setItem("$i_v_value", "---");
+		sessionStorage.setItem("$f_v_value", "---");
+		sessionStorage.setItem("$d_value", "---");
+		sessionStorage.setItem("$t_value", "---");
+		sessionStorage.setItem("$a_value", "---");
+	});
 });

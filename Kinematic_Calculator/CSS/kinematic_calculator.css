@@ -86,8 +86,16 @@ form {
 	width: 100%;
 }
 
-#submit:hover {
+#submit:hover, #clear:hover {
 	cursor: pointer;
+}
+
+#submit {
+	margin-right: 10%;
+}
+
+#clear {
+	margin-left: 10%;
 }
 /* End of Main */
 
