@@ -10,7 +10,7 @@ as configuring the margin and padding of numerous elements on a page at once, cr
 JavaScript with HTML and CSS, I feel much more prepared to work on other projects using these languages.
 
 # Kinematic Equation Calculator
-![alt text](README_Pictures/kinematic--calculator.PNG)
+![alt text](README_Pictures/kinematic-calculator.PNG)
 
 A project that computes the five values commonly utilized within kinematic equations in physics. By inputting only three or four of the five, the rest will be comptued by the JavaScript code I created.
 
