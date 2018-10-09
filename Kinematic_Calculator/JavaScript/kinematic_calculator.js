@@ -35,7 +35,7 @@ $(document).ready(() => {
 	 * (represented as undefined), the function will utilize the other three
 	 * values instead.
 	 */
-	function calculateInitalVelocity(f, d, t, a) {
+	function calculateInitialVelocity(f, d, t, a) {
 		if (f == null) { // The final velocity is also missing.
 			return (d - (0.5 * a * Math.pow(t, 2))) / t;
 		} else if (d == null) { // The distance is missing.
@@ -83,7 +83,6 @@ $(document).ready(() => {
 	 * undefined), the function will utilize the other three values instead.
 	 */
 	function calculateDistance(i, f, t, a) {
-		
 		if (i == null) {
 			return (f * t) - (0.5 * a * Math.pow(t, 2));
 		} else if (f == null) {
@@ -107,7 +106,17 @@ $(document).ready(() => {
 	 * undefined), the function will utilize the other three values instead.
 	 */
 	function calculateTime(i, f, d, a) {
-		return 44;
+		if (i == null) {
+			return (2 * d) / (f + calculateInitialVelocity(f, d, null, a));
+		} else if (f == null) {
+			return (2 * d) / (calculateFinalVelocity(i, d, null, a) + i);
+		} else if (d == null) {
+			return (f - i) / a;
+		} else if (a == null) {
+			return (2 * d) / (calculateFinalVelocity(i, d, null, a) + i);
+		} else {
+			return (f - i) / a;
+		}
 	}
 	
 	/*
@@ -120,8 +129,27 @@ $(document).ready(() => {
 	 * as undefined), the function will utilize the other three values instead.
 	 */
 	function calculateAcceleration(i, f, d, t) {
-		return 55;
+		if (i == null) {
+			return ((d - (f * t)) * -2) / Math.pow(t, 2);
+		} else if (f == null) {
+			return ((d - (i * t)) * 2) / Math.pow(t, 2);
+		} else if (d == null) {
+			return (f - i) / t;
+		} else if (t == null) {
+			return (Math.pow(f, 2) - Math.pow(i, 2)) / (2 * d);
+		} else {
+			return (f - i) / t;
+		}
 	}
+	
+	/*
+Given:
+vi = 5.03 m/s
+vf = 0 m/s
+d = 1.29 m
+t = 0.513 s
+a = -9.8 m/s2
+	*/
 	
 	// The ids for the form.
 	const $i_v = $("#i_velocity");
@@ -201,7 +229,7 @@ $(document).ready(() => {
 			sessionStorage.setItem("$a_value", $a.val());
 		} else if (numValid >= 3) { // At least three valid inputs are needed.
 			if (!valid[0]) { // No given initial velocity.
-				initialVelocity = calculateInitalVelocity(finalVelocity,
+				initialVelocity = calculateInitialVelocity(finalVelocity,
 					distance, time, acceleration);
 			}
 			
