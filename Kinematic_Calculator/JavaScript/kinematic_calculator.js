@@ -142,15 +142,6 @@ $(document).ready(() => {
 		}
 	}
 	
-/*
-Test:
-vi = 5.03 m/s
-vf = 0 m/s
-d = 1.29 m
-t = 0.513 s
-a = -9.8 m/s2
-*/
-	
 	// The ids for the form.
 	const $i_v = $("#i_velocity");
 	const $f_v = $("#f_velocity");
@@ -165,12 +156,14 @@ a = -9.8 m/s2
 	const $t_value = $("#t_value");
 	const $a_value = $("#a_value");
 	
+	// Setting the saved input values.
 	$i_v.val(sessionStorage.getItem("$i_v"));
 	$f_v.val(sessionStorage.getItem("$f_v"));
 	$d.val(sessionStorage.getItem("$d"));
 	$t.val(sessionStorage.getItem("$t"));
 	$a.val(sessionStorage.getItem("$a"));
-		
+	
+	// Setting the saved output values.
 	$i_v_value.text(sessionStorage.getItem("$i_v_value"));
 	$f_v_value.text(sessionStorage.getItem("$f_v_value"));
 	$d_value.text(sessionStorage.getItem("$d_value"));
@@ -253,6 +246,7 @@ a = -9.8 m/s2
 					finalVelocity, distance, time);
 			}
 			
+			// Saving the comptued values.
 			sessionStorage.setItem("$i_v", initialVelocity);
 			sessionStorage.setItem("$f_v", finalVelocity);
 			sessionStorage.setItem("$d", distance);
@@ -264,31 +258,13 @@ a = -9.8 m/s2
 			sessionStorage.setItem("$d_value", distance);
 			sessionStorage.setItem("$t_value", time);
 			sessionStorage.setItem("$a_value", acceleration);
-		} else {
+		} else { // Less than three valid inputs are given.
 			alert("Please enter at least 3 numerical values.");
 		}
-		
-		/*
-		sessionStorage.setItem("$i_v", $i_v.val());
-		sessionStorage.setItem("$f_v", $f_v.val());
-		sessionStorage.setItem("$d", $d.val());
-		sessionStorage.setItem("$t", $t.val());
-		sessionStorage.setItem("$a", $a.val());
-		
-		sessionStorage.setItem("$i_v_value", $i_v.val());
-		sessionStorage.setItem("$f_v_value", $f_v.val());
-		sessionStorage.setItem("$d_value", $d.val());
-		sessionStorage.setItem("$t_value", $t.val());
-		sessionStorage.setItem("$a_value", $a.val());
-		*/
 	});
 	
-	$("#clear").on("click", () => {
-		sessionStorage.setItem("$i_v", "");
-		sessionStorage.setItem("$f_v", "");
-		sessionStorage.setItem("$d", "");
-		sessionStorage.setItem("$t", "");
-		sessionStorage.setItem("$a", "");
+	$("#clear").on("click", () => { // Clears all saved values.
+		sessionStorage.clear();
 		
 		sessionStorage.setItem("$i_v_value", "---");
 		sessionStorage.setItem("$f_v_value", "---");
