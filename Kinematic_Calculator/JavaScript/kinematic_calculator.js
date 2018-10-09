@@ -45,7 +45,7 @@ $(document).ready(() => {
 		} else if (a == null) { // The acceleration is missing.
 			return ((d / t) * 2) - f;
 		} else { // All values are present.
-			return Math.sqrt(Math.pow(f, 2) - (2 * a * d));
+			return (d - (0.5 * a * Math.pow(t, 2))) / t;
 		}
 	}
 	
@@ -53,53 +53,60 @@ $(document).ready(() => {
 	 * Name: calculateFinalVelocity.
 	 * Input: The initial velocity, distance, time, and acceleration values from
 	 * the form.
-	 * Output: The calculated inital velocity.
+	 * Output: The calculated final velocity.
 	 * About: This function takes in four of the form's inputs and calculates
-	 * the inital velocity from them. If one of them happen to missing
+	 * the final velocity from them. If one of them happen to missing
 	 * (represented as undefined), the function will utilize the other three
 	 * values instead.
 	 */
 	function calculateFinalVelocity(i, d, t, a) {
-		return 22;
+		if (i == null) {
+			return (d + (0.5 * a * Math.pow(t, 2))) / t;
+		} else if (d == null) {
+			return i + (a * t);
+		} else if (t == null) {
+			return Math.sqrt(Math.pow(i, 2) + (2 * a * d));
+		} else if (a == null) {
+			return ((d / t) * 2) - i;
+		} else {
+			return i + (a * t);
+		}
 	}
 	
 	/*
-	 * Name: calculateInitialVelocity.
-	 * Input: The final velocity, distance, time, and acceleration values from
-	 * the form.
-	 * Output: The calculated inital velocity.
+	 * Name: calculateDistance.
+	 * Input: The initial velocity, final velocity, time, and acceleration values
+	 * from the form.
+	 * Output: The calculated distance.
 	 * About: This function takes in four of the form's inputs and calculates
-	 * the inital velocity from them. If one of them happen to missing
-	 * (represented as undefined), the function will utilize the other three
-	 * values instead.
+	 * the distance from them. If one of them happen to missing (represented as
+	 * undefined), the function will utilize the other three values instead.
 	 */
 	function calculateDistance(i, f, t, a) {
 		return 33;
 	}
 	
 	/*
-	 * Name: calculateInitialVelocity.
-	 * Input: The final velocity, distance, time, and acceleration values from
-	 * the form.
-	 * Output: The calculated inital velocity.
+	 * Name: calculateTime.
+	 * Input: The initial velocity, final velocity, distance, and acceleration
+	 * values from the form.
+	 * Output: The calculated time.
 	 * About: This function takes in four of the form's inputs and calculates
-	 * the inital velocity from them. If one of them happen to missing
-	 * (represented as undefined), the function will utilize the other three
-	 * values instead.
+	 * the time from them. If one of them happen to missing (represented as
+	 * undefined), the function will utilize the other three values instead.
 	 */
 	function calculateTime(i, f, d, a) {
 		return 44;
 	}
 	
 	/*
-	 * Name: calculateInitialVelocity.
-	 * Input: The final velocity, distance, time, and acceleration values from
-	 * the form.
-	 * Output: The calculated inital velocity.
+	 * Name: calculateAcceleration.
+	 * Input: The initial velocity, final velocity, distance, time, and values
+	 * from the form.
+	 * Output: The calculated acceleration.
 	 * About: This function takes in four of the form's inputs and calculates
-	 * the inital velocity from them. If one of them happen to missing
-	 * (represented as undefined), the function will utilize the other three
-	 * values instead.
+	 * the acceleration from them. If one of them happen to missing (represented
+	 * as undefined), the function will utilize the other three values instead.
 	 */
 	function calculateAcceleration(i, f, d, t) {
 		return 55;
