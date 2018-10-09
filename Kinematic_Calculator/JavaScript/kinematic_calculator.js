@@ -83,7 +83,18 @@ $(document).ready(() => {
 	 * undefined), the function will utilize the other three values instead.
 	 */
 	function calculateDistance(i, f, t, a) {
-		return 33;
+		
+		if (i == null) {
+			return (f * t) - (0.5 * a * Math.pow(t, 2));
+		} else if (f == null) {
+			return (i * t) + (0.5 * a * Math.pow(t, 2));
+		} else if (t == null) {
+			return (Math.pow(f, 2) - Math.pow(i, 2)) / (2 * a);
+		} else if (a == null) {
+			return ((i + f) / 2) * t;
+		} else {
+			return ((i + f) / 2) * t;
+		}
 	}
 	
 	/*
