@@ -113,7 +113,7 @@ $(document).ready(() => {
 		} else if (d == null) {
 			return (f - i) / a;
 		} else if (a == null) {
-			return (2 * d) / (calculateFinalVelocity(i, d, null, a) + i);
+			return (2 * d) / (f + i);
 		} else {
 			return (f - i) / a;
 		}
@@ -142,14 +142,14 @@ $(document).ready(() => {
 		}
 	}
 	
-	/*
-Given:
+/*
+Test:
 vi = 5.03 m/s
 vf = 0 m/s
 d = 1.29 m
 t = 0.513 s
 a = -9.8 m/s2
-	*/
+*/
 	
 	// The ids for the form.
 	const $i_v = $("#i_velocity");

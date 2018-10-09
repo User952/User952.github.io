@@ -52,7 +52,8 @@ header a {
 #about-description {
 	background-color: darkgrey;
 	display: none;
-	padding: 1em;
+	padding: 2em 1em;
+	overflow: hidden;
 }
 /* End of header. */
 
@@ -64,18 +65,6 @@ main {
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 1em;
 	text-align: center;
-}
-
-#equations {
-	
-}
-
-form {
-	
-}
-
-#results {
-	
 }
 
 #equations, form, #results {
