@@ -299,13 +299,14 @@ h3 {
 .project-item {
   background: radial-gradient(white, gray);
   box-shadow: 7px 7px 5px #404040;
+  border: 2px solid black;
 }
 
 .project-item-title {
   border-bottom: goldenrod solid 3px;
 }
 
-.project-item-title h4 {
+.project-item-title h4, .project-item-title h5 {
   margin: 0;
   padding: 0;
   border: none;
