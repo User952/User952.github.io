@@ -3,6 +3,11 @@
 	padding: 0;
 }
 
+ /* Prevents the scroll bar from interferring with the "About" tab. */
+::-webkit-scrollbar {
+    display: none; 
+}
+
 body {
   margin: 0;
   padding: 0;
