@@ -15,6 +15,6 @@ JavaScript with HTML and CSS, I feel much more prepared to work on other project
 A project that computes the five values commonly utilized within kinematic equations in physics. By inputting only three or four of the five, the rest will be comptued by the JavaScript code I created.
 
 # New Project
-![alt text](README_Pictures/placeholder)
+![alt text](README_Pictures/kinematic_calculator.PNG)
 
 Placeholder text.
