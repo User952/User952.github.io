@@ -14,7 +14,7 @@ JavaScript with HTML and CSS, I feel much more prepared to work on other project
 
 A project that computes the five values commonly utilized within kinematic equations in physics. By inputting only three or four of the five, the rest will be comptued by the JavaScript code I created.
 
-# New Project
+# Pomodoro Timer
 ![alt text](README_Pictures/kinematic_calculator.PNG)
 
-Placeholder text.
+This project aims to create a timer that implements the famous Pomodoro Technique. With this tool, users will be able to better manage their time; ergo, leading to better allocations and results.
