@@ -10,3 +10,45 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 
+/* Start of footer. */
+footer {
+  margin: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#contact-title {
+  padding: 0;
+  margin-top: 20px;
+}
+
+h2 {
+  display: inline-block;
+  border-bottom: goldenrod 2px solid;
+}
+
+.link {
+  display: inline-block;
+  text-align: center;
+  padding: 2em;
+}
+
+.link a:hover {
+  animation: animateIcons 2s linear infinite;
+}
+
+@keyframes animateIcons {
+  50% {color: goldenrod;}
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer a p {
+	margin-top: 1em;
+}
+/* End of footer. */
