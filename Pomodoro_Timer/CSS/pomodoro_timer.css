@@ -8,10 +8,74 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto Mono", monospace;
-  background-color:  #ff9966;
+  background-color:  #e66645;
+  color: white;
 }
 
-/* Start of footer. */
+a {
+	color: white;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+/* Start of header. */
+header {
+  background-color: #e66645;
+  color: white;
+}
+
+#about, #instructions {
+	position: relative;
+	top: 15px;
+}
+
+#title {
+	border-left: 2px double white;
+	border-right: 2px double white;
+}
+
+#about-description, #instructions-description {
+	background-color: #ff9980;
+	display: none;
+	position: absolute;
+	padding: 10px;
+}
+/* End of header. */
+
+/* Start of main. */
+main {
+	background-color: #fff;
+	padding: 100px 0;
+}
+/* End of main. */
+
+/* Start of Footer. */
+footer {
+	background-color: #e66645;
+	padding: 40px 0;
+	font-size: 20px;
+}
+
+footer a {
+	display: inline-block;
+	color: white;
+}
+
+footer a:hover {
+	animation: footer-link 2.5s linear 0s infinite normal;
+	color: black;
+}
+
+@keyframes footer-link {
+  50% {box-shadow: 100px 0px 100px 10px #ffd980; color: #ffd980;}
+}
+
+/* End of footer. */
+
+/* Start of footer.
 footer {
   margin: 0;
   background-color: black;
@@ -52,4 +116,4 @@ footer a {
 footer a p {
 	margin-top: 1em;
 }
-/* End of footer. */
+End of footer. */
