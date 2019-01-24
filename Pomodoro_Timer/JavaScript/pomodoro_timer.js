@@ -1,28 +1,15 @@
+/* global $ */
+
 $(function() {
 	$('#about').on('click', function() {
-	  $('#about-description').slideDown();
-	}).on('mouseleave', function() {
-	  $('#about-description').slideUp();
+	  $('#about-description').slideToggle();
 	});
 	
 	$('#instructions').on('click', function() {
-	  $('#instructions-description').slideDown();
-	}).on('mouseleave', function() {
-	  $('#instructions-description').slideUp();
+	  $('#instructions-description').slideToggle();
 	});
 	
-	$('#about').on('mouseenter', function() {
-	  $(this).css('color', 'red');
-	}).on('mouseleave', function() {
-	  $(this).css('color', 'white');
-	});
-	
-	$('#instructions').on('mouseenter', function() {
-	  $(this).css('color', 'red');
-	}).on('mouseleave', function() {
-	  $(this).css('color', 'white');
-	});
-	
+	/*
 	DATE METHODS
 	(When a Date object is created, a number of methods make it possible to perform
 	    operations on it.)
@@ -53,4 +40,5 @@ $(function() {
 	    case, we are changing the HTML content of our document's body. This
 	    overwrites the content every second, instead of printing it repeatedly to
     	the screen.)
+  	*/
 });
