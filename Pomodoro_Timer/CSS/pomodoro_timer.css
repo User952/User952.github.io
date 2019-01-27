@@ -65,12 +65,53 @@ header {
 	position: absolute;
 	padding: 10px;
 }
+
+#about-description a, #instructions-description a {
+	color: black;
+}
+
+#about-description a:hover, #instructions-description a:hover {
+	color: grey;
+	border-bottom: 1px solid grey;
+}
 /* End of header. */
 
 /* Start of main. */
 main {
 	background-color: white;
 	padding: 100px 0;
+	color: black;
+}
+
+.mode {
+	font-size: 20px;
+	color: white;
+	background-color: #e66645;
+	border: 1px solid white;
+}
+
+.mode:hover {
+	background-color: #ff9980;
+}
+
+#timer {
+	font-size: 60px;
+}
+
+.button {
+	font-size: 20px;
+	color: white;
+	background-color: grey;
+	border: 1px solid white;
+}
+
+caption {
+	text-align: center;
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
 }
 /* End of main. */
 
@@ -96,46 +137,3 @@ footer a:hover {
 }
 
 /* End of footer. */
-
-/* Start of footer.
-footer {
-  margin: 0;
-  background-color: black;
-  color: white;
-  text-align: center;
-}
-
-#contact-title {
-  padding: 0;
-  margin-top: 20px;
-}
-
-h2 {
-  display: inline-block;
-  border-bottom: goldenrod 2px solid;
-}
-
-.link {
-  display: inline-block;
-  text-align: center;
-  padding: 2em;
-}
-
-.link a:hover {
-  animation: animateIcons 2s linear infinite;
-}
-
-@keyframes animateIcons {
-  50% {color: goldenrod;}
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-}
-
-footer a p {
-	margin-top: 1em;
-}
-End of footer. */

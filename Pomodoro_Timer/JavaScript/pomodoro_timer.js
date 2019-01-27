@@ -2,10 +2,12 @@
 
 $(function() {
 	$('#about').on('click', function() {
+		$('#instructions-description').slideUp();
 	  $('#about-description').slideToggle();
 	});
 	
 	$('#instructions').on('click', function() {
+		$('#about-description').slideUp();
 	  $('#instructions-description').slideToggle();
 	});
 	
