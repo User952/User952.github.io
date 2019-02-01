@@ -64,6 +64,7 @@ header {
 	display: none;
 	position: absolute;
 	padding: 10px;
+	z-index: 1;
 }
 
 #about-description a, #instructions-description a {
@@ -79,7 +80,7 @@ header {
 /* Start of main. */
 main {
 	background-color: white;
-	padding: 100px 0;
+	padding: 50px 0;
 	color: black;
 }
 
@@ -95,7 +96,8 @@ main {
 }
 
 #timer {
-	font-size: 60px;
+	font-size: 80px;
+	padding: 50px 0;
 }
 
 .button {
@@ -103,6 +105,7 @@ main {
 	color: white;
 	background-color: grey;
 	border: 1px solid white;
+	margin-bottom: 50px;
 }
 
 caption {
