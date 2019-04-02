@@ -1,5 +1,9 @@
 /* global $ */
 
+function move () {
+	
+}
+
 $(function() {
 	$('#about').on('click', function() {
 		$('#instructions-description').slideUp();

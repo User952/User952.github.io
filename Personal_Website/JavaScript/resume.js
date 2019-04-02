@@ -31,7 +31,7 @@ var images = ["Personal_Website/Images/carousel-slide_1.jpg",
 var num = 0;
 
 function previous() { // To be used by left-div.
-  if(--num < 0) {
+  if (--num < 0) {
     num = images.length - 1;
   }
   
@@ -39,7 +39,7 @@ function previous() { // To be used by left-div.
 }
 
 function next() { // To be used by right-div.
-  if(++num >= images.length) {
+  if (++num >= images.length) {
     num = 0;
   }
     
