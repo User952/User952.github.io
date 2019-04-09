@@ -131,11 +131,11 @@ footer a {
 	transition: all 0.4s;
 }
 
-footer a:before, footer a:after {
+/*footer a:before, footer a:after {
 	content: "";
 	border: 3px solid white;
 	transform: scaleX(0);
-}
+}*/
 
 /*footer a:hover {
 	animation: footer-link 2.5s linear 0s infinite normal;
