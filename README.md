@@ -17,4 +17,4 @@ A project that computes the five values commonly utilized within kinematic equat
 # Pomodoro Timer
 ![alt text](README_Pictures/pomodoro_timer.PNG)
 
-This project aims to create a timer that implements the famous Pomodoro Technique. With this tool, users will be able to better manage their time; ergo, leading to better allocations and results. This website is currently a work in progress.
+This project aims to create a timer that implements the famous Pomodoro Technique. With this tool, users will be able to better manage their time; ergo, leading to better time allocations and task results. This website is currently a work in progress.
