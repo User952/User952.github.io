@@ -93,6 +93,7 @@ main {
 
 .mode:hover {
 	background-color: #ff9980;
+	cursor: pointer;
 }
 
 #timer {
@@ -106,6 +107,11 @@ main {
 	background-color: grey;
 	border: 1px solid white;
 	margin-bottom: 50px;
+}
+
+.button:hover {
+	background-color: silver;
+	cursor: pointer;
 }
 
 caption {
