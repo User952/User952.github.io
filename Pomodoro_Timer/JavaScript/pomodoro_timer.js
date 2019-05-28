@@ -65,7 +65,8 @@ $(function() {
 	
 	/*
 	DATE METHODS
-	(When a Date object is created, a number of methods make it possible to perform
+	(When a Date object is created, a number of methods make it possible to
+		perform
 	    operations on it.)
 	(https://api.sololearn.com/DownloadFile?id=2772)
 	--------------------
